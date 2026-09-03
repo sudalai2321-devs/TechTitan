@@ -318,8 +318,11 @@ function handleCheckRegister(data) {
   const registerNo = String(data.registerNo || '').trim();
   if (!registerNo) return { success: false, message: 'Register number is required.' };
 
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAMES.STUDENTS);
-  if (!sheet) return { success: false, message: 'Students sheet missing. Run setupDatabase first.' };
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAMES.STUDENTS);
+  if (!sheet) {
+    setupDatabase();
+    sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAMES.STUDENTS);
+  }
 
   const rows = sheet.getDataRange().getValues();
 
