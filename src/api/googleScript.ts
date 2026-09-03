@@ -72,7 +72,7 @@ const mockApiCall = async (action: string, payload: any): Promise<any> => {
               user: {
                 registerNo: reg,
                 name: student.name,
-                department: 'Computer Science',
+                department: 'Information Technology',
                 year: '3rd Year',
                 email: '',
               }
@@ -95,7 +95,7 @@ const mockApiCall = async (action: string, payload: any): Promise<any> => {
                 user: {
                   registerNo: reg,
                   name: student.name,
-                  department: 'Computer Science',
+                  department: 'Information Technology',
                   year: '3rd Year',
                   email: '',
                 }

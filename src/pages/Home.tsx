@@ -129,7 +129,7 @@ export const Home = () => {
               <GlassCard className="p-6 aspect-square flex flex-col justify-center items-center text-center">
                 <Target className="text-brand-red mb-4" size={32} />
                 <h3 className="font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>Our Vision</h3>
-                <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>To be a center of excellence in computer education and innovation.</p>
+                <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>To be a center of excellence in information technology education and innovation.</p>
               </GlassCard>
               <GlassCard className="p-6 aspect-square flex flex-col justify-center items-center text-center translate-y-8">
                 <Lightbulb className="text-brand-gold mb-4" size={32} />

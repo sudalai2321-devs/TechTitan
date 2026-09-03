@@ -63,7 +63,7 @@ export const Footer = () => {
                 <span>contact@techtitans.edu</span>
               </li>
               <li className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                Department of Computer Science<br/>
+                Department of Information Technology<br/>
                 Engineering Block, 3rd Floor
               </li>
             </ul>
