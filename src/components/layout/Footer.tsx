@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, MessageCircle, Share2, Monitor } from 'lucide-react';
+import logoImg from '../../assets/logo';
 
 export const Footer = () => {
   return (
@@ -12,8 +13,8 @@ export const Footer = () => {
           
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-               <div className="w-8 h-8 rounded-full flex items-center justify-center shadow-[0_0_10px_var(--shadow-glow)] bg-white overflow-hidden">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+               <div className="w-8 h-8 rounded-full flex items-center justify-center shadow-[0_0_10px_var(--shadow-glow)] bg-white overflow-hidden border border-brand-blue/30">
+                <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
               </div>
               <h2 className="text-lg font-bold tracking-wider" style={{ color: 'var(--text-primary)' }}>TECH TITANS</h2>
             </div>

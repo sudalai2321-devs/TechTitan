@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoImg from '../../assets/logo';
 
 interface SplashScreenProps {
   userName: string;
@@ -111,7 +112,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ userName, onComplete
                 transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
                 className="w-32 h-32 rounded-full bg-white overflow-hidden shadow-[0_0_60px_rgba(0,151,255,0.4)] border-2 border-brand-blue/40"
               >
-                <img src="/logo.png" alt="Tech Titans" className="w-full h-full object-cover scale-110" />
+                <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
               </motion.div>
             </div>
 

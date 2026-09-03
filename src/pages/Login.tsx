@@ -6,6 +6,7 @@ import { useAuth } from '../context/AuthContext';
 import { apiCall } from '../api/googleScript';
 import { GlassCard } from '../components/ui/GlassCard';
 import { SplashScreen } from '../components/ui/SplashScreen';
+import logoImg from '../assets/logo';
 
 type LoginStep = 'register' | 'setPassword' | 'login';
 
@@ -130,7 +131,7 @@ export const Login = () => {
           <motion.div key="step-register" initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -30, opacity: 0 }} transition={{ duration: 0.3 }}>
             <div className="text-center space-y-3 mb-8">
               <div className="lg:hidden w-24 h-24 mx-auto rounded-full bg-white overflow-hidden shadow-[0_0_30px_rgba(0,151,255,0.3)] mb-4 border-2 border-brand-blue/30">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+                <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
               </div>
               <h2 className="text-3xl font-bold">
                 <span style={{ color: 'var(--text-primary)' }}>Welcome, </span>
@@ -223,7 +224,7 @@ export const Login = () => {
           <motion.div key="step-login" initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -30, opacity: 0 }} transition={{ duration: 0.3 }}>
             <div className="text-center space-y-3 mb-8">
               <div className="lg:hidden w-24 h-24 mx-auto rounded-full bg-white overflow-hidden shadow-[0_0_30px_rgba(0,151,255,0.3)] mb-4 border-2 border-brand-blue/30">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+                <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
               </div>
               <h2 className="text-2xl font-bold" style={{ color: 'var(--text-primary)' }}>
                 Welcome back, <span className="text-brand-blue">{studentName.split(' ')[0]}</span>
@@ -290,7 +291,7 @@ export const Login = () => {
           <motion.div initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1, type: 'spring', stiffness: 80 }} className="relative">
             <div className="absolute inset-0 w-56 h-56 mx-auto rounded-full bg-brand-blue/20 blur-[40px] animate-pulse"></div>
             <div className="w-56 h-56 mx-auto rounded-full flex items-center justify-center border-4 border-brand-blue/30 shadow-[0_0_60px_rgba(0,151,255,0.3)] relative overflow-hidden bg-white animate-glow-pulse">
-              <img src="/logo.png" alt="Tech Titans Logo" className="w-full h-full object-cover scale-110" />
+              <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
             </div>
           </motion.div>
           <motion.div initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.4 }} className="space-y-4">

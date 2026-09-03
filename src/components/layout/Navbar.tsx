@@ -5,6 +5,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
 import { cn } from '../../utils/cn';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoImg from '../../assets/logo';
 
 export const Navbar = () => {
   const { user, logout } = useAuth();
@@ -37,8 +38,8 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-[0_0_15px_var(--shadow-glow)] bg-white overflow-hidden">
-              <img src="/logo.png" alt="Logo" className="w-full h-full object-cover scale-110" />
+            <div className="w-10 h-10 rounded-full flex items-center justify-center shadow-[0_0_15px_var(--shadow-glow)] bg-white overflow-hidden border border-brand-blue/30">
+              <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
             </div>
             <div>
               <h1 className="text-xl font-bold tracking-wider" style={{ color: 'var(--text-primary)' }}>TECH TITANS</h1>

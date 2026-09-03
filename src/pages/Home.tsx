@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { BookOpen, Lightbulb, Calendar, Users, Target, Code, ArrowRight } from 'lucide-react';
 import { GlassCard } from '../components/ui/GlassCard';
 import { Link } from 'react-router-dom';
+import logoImg from '../assets/logo';
 
 export const Home = () => {
   return (
@@ -20,8 +21,23 @@ export const Home = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="inline-block p-2 px-4 rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue text-sm font-medium mb-4 backdrop-blur-sm">
-              The Official Department Portal
+            {/* Tech Titans Logo in Hero */}
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-block relative"
+            >
+              <div className="absolute inset-0 rounded-full bg-brand-blue/30 blur-2xl animate-pulse"></div>
+              <div className="w-28 h-28 md:w-36 md:h-36 mx-auto rounded-full bg-white flex items-center justify-center shadow-[0_0_50px_var(--shadow-glow)] border-4 border-brand-blue/40 overflow-hidden relative z-10 animate-glow-pulse">
+                <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
+              </div>
+            </motion.div>
+
+            <div>
+              <div className="inline-block p-2 px-4 rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue text-sm font-medium mb-4 backdrop-blur-sm">
+                The Official Department Portal
+              </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight" style={{ color: 'var(--text-primary)' }}>

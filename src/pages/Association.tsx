@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GlassCard } from '../components/ui/GlassCard';
 import { Users, Shield, Target, Code, Cpu, Database, Cloud } from 'lucide-react';
+import logoImg from '../assets/logo';
 
 const leaders = [
   { name: 'Vishwa', role: 'President', description: 'Leading the Tech Titans with a vision for innovation and excellence.' },
@@ -28,8 +29,8 @@ export const Association = () => {
           animate={{ opacity: 1, y: 0 }}
           className="space-y-6 max-w-4xl mx-auto"
         >
-           <div className="w-32 h-32 mx-auto rounded-full flex items-center justify-center border-4 border-brand-blue/30 shadow-[0_0_40px_var(--shadow-glow)] mb-8 bg-white overflow-hidden animate-glow-pulse">
-            <img src="/logo.png" alt="Tech Titans Logo" className="w-full h-full object-cover scale-110" />
+           <div className="w-36 h-36 mx-auto rounded-full flex items-center justify-center border-4 border-brand-blue/40 shadow-[0_0_40px_var(--shadow-glow)] mb-8 bg-white overflow-hidden animate-glow-pulse">
+            <img src={logoImg} alt="Tech Titans Logo" className="w-full h-full object-cover scale-105" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-widest uppercase" style={{ color: 'var(--text-primary)' }}>Tech Titans</h1>
           <p className="text-xl text-brand-blue tracking-[0.3em] font-medium uppercase">Create • Code • Conquer</p>
