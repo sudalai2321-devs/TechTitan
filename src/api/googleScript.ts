@@ -66,7 +66,7 @@ const mockApiCall = async (action: string, payload: any): Promise<any> => {
                 registerNo: payload.registerNo,
                 name: student.name,
                 department: 'Computer Science',
-                year: '2nd Year',
+                year: '3rd Year',
                 email: '',
               }
             });
@@ -88,7 +88,7 @@ const mockApiCall = async (action: string, payload: any): Promise<any> => {
                   registerNo: payload.registerNo,
                   name: student.name,
                   department: 'Computer Science',
-                  year: '2nd Year',
+                  year: '3rd Year',
                   email: '',
                 }
               });
